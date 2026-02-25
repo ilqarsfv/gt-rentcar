@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 w-full z-[99] duration-300 ease-in-out">
+      <div class="px-12">
+        <div class="flex items-center justify-between">
+          <a href="/" class="h_logo">
+            <img src="/photos/logo.png" alt="logo" width="50" />
+          </a>
+          <nav>
+            <ul class="flex item-center gap-6 text-[#ffffffb3] text-[14px] justify-center">
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block text-white border-t border-[#fff]"><a href="">Главная</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">О компании</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">Кроссоверы</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">Седаны</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">Купе</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">Кабриолеты</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">Премиум</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">Эконом</a></li>
+              <li class="duration-300 ease-in-out hover:text-[white] py-[32px] inline-block"><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="flex items-center gap-4">
+            <div class="flex flex-col gap-1 text-[14px] text-white">
+              <a href="">+7 (965) 252-55-55</a>
+              <a href="">+7 (965) 252-55-55</a>
+            </div>
+            <button class="border border-[#fff] cursor-pointer text-[12px] py-2 px-5 inline-block text-white">Обратный звонок</button>
+            <div class="flex items-center gap-4">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="22"
+                  height="22"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 511 511.9"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"
+                      fill="#fffdfd"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"
+                      fill="#fffdfd"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="22"
+                  height="22"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M12 24c6.629 0 12-5.371 12-12S18.629 0 12 0 0 5.371 0 12s5.371 12 12 12zM5.491 11.74l11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="22"
+                  height="22"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                    <path
+                      d="M20.52 3.449C12.831-3.984.106 1.407.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145a9.865 9.865 0 0 1 7.021 2.91 9.788 9.788 0 0 1 2.909 6.99z"
+                      fill="#ffffff"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- socials fixed -->
+    <div class="socialsFixed fixed right-[20px] bottom-[40px] z-[999999]">
+      <div class="socialsBoxFix flex flex-col items-center gap-3 h-[0px] overflow-hidden duration-200 mb-[-10px]">
+        <!-- wp -->
+        <a class="socialContainer containerFour" href="" aria-label="Написать в WhatsApp" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="512"
+            height="512"
+            x="0"
+            y="0"
+            viewBox="0 0 682 682.667"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class="socialSvg whatsappSvg"
+          >
+            <g>
+              <path
+                fill-rule="evenodd"
+                d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0"
+                fill="#ffffff"
+                opacity="1"
+                data-original="#000000"
+                class=""
+              ></path>
+            </g>
+          </svg>
+        </a>
+        <!-- telegram -->
+        <a class="socialContainer containerOne" href="" aria-label="Написать в Telegram" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="512"
+            height="512"
+            x="0"
+            y="0"
+            viewBox="0 0 24 24"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+            class="socialSvg telegramSvg"
+          >
+            <g>
+              <path
+                d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"
+                fill="#ffffff"
+                opacity="1"
+                data-original="#000000"
+                class=""
+              ></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="animated w-[55px] cursor-pointer bg-[#1e1d1f] text-[#fff] border-[2px] border-[#fff] h-[55px] rounded-full flex items-center justify-center">
+        <svg class="fixed__socials__open" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+          <path
+            fill="currentColor"
+            d="M27.754 2.119h-8.203c-3.957 0-7.178 3.22-7.178 7.178 0 3.61 2.679 6.606 6.152 7.105v3.149a1.02 1.02 0 0 0 .633.947c.378.158.822.073 1.118-.222l3.801-3.801h3.677c3.957 0 7.246-3.22 7.246-7.178s-3.289-7.178-7.246-7.178m-8.203 8.203a1.025 1.025 0 1 1 0-2.05 1.025 1.025 0 0 1 0 2.05m4.102 0a1.025 1.025 0 1 1 0-2.05 1.025 1.025 0 0 1 0 2.05m4.102 0a1.025 1.025 0 1 1 0-2.05 1.025 1.025 0 0 1 0 2.05"
+            data-original="#000000"
+          ></path>
+          <path
+            fill="currentColor"
+            d="M23.037 32.881a3.08 3.08 0 0 0 3.076-3.076v-4.102c0-.442-.282-.833-.701-.972l-6.138-2.051a1.03 1.03 0 0 0-.893.119l-2.61 1.739c-2.764-1.318-6.043-4.597-7.361-7.361l1.739-2.61a1.03 1.03 0 0 0 .119-.893L8.217 7.536a1.02 1.02 0 0 0-.971-.7h-4.17A3.067 3.067 0 0 0 0 9.898c0 11.814 11.223 22.983 23.037 22.983"
+            data-original="#000000"
+          ></path>
+        </svg>
+        <svg class="fixed__socials__close hidden" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 1.117 1.117">
+          <path
+            d="M.016.093a.056.056 0 0 1 0-.077.056.056 0 0 1 .077 0l.465.466.466-.466a.055.055 0 0 1 .077 0 .054.054 0 0 1 0 .077L.636.558l.465.466a.054.054 0 0 1 0 .077.055.055 0 0 1-.077 0L.558.635l-.465.466a.056.056 0 0 1-.077 0 .055.055 0 0 1 0-.077L.481.558z"
+            fill="currentColor"
+            data-original="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- banner -->
+      <section>
+        <div class="relative h-[100vh]">
+          <video src="/photos/banner_videp.mp4" autoplay muted loop class="absolute left-0 top-0 w-full h-full object-cover z-[96]"></video>
+          <div class="absolute left-0 top-0 w-full h-full bg-[#0005] z-[97]"></div>
+          <div class="container relative z-[98] h-full pb-16">
+            <div class="flex flex-col items-start h-full justify-end">
+              <h1 class="text-[42px] font-bold text-white">Аренда авто премиум класса в Москве</h1>
+              <p class="text-[32px] font-medium mt-8 text-white">Выберите автопарк:</p>
+              <div class="flex items-center gap-6 mt-12 text-[19px] font-bold">
+                <a href="" class="rounded-[30px] bg-[#2c2b2e] py-4 px-8 text-white duration-300 ease-in-out hover:text-black hover:bg-white">Москва</a>
+                <a href="" class="rounded-[30px] bg-[#2c2b2e] py-4 px-8 text-white duration-300 ease-in-out hover:text-black hover:bg-white">Сочи</a>
+                <a href="" class="rounded-[30px] bg-[#2c2b2e] py-4 px-8 text-white duration-300 ease-in-out hover:text-black hover:bg-white">Дубай</a>
+                <a href="" class="rounded-[30px] bg-[#2c2b2e] py-4 px-8 text-white duration-300 ease-in-out hover:text-black hover:bg-white">Казань</a>
+                <a href="" class="rounded-[30px] bg-[#2c2b2e] py-4 px-8 text-white duration-300 ease-in-out hover:text-black hover:bg-white">Санкт-Петербург</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- advantages -->
+      <section>
+        <div class="container mt-24">
+          <h2 class="text-5xl font-bold text-white">Преимущества</h2>
+          <div class="flex flex-wrap justify-between gap-y-8 mt-12">
+            <div class="bg-[#222123] p-4 rounded-[6px] w-[24%] text-white">
+              <div class="bg-white w-[50px] h-[50px] overflow-hidden rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <mask id="mask0_2258_14759" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32"><rect width="32" height="32" fill="#D9D9D9"></rect></mask>
+                  <g mask="url(#mask0_2258_14759)">
+                    <path
+                      d="M8.66658 19.9668V18.6335H5.33325V15.9668H11.9999V13.3001H6.66659C6.28881 13.3001 5.97214 13.1724 5.71659 12.9168C5.46103 12.6612 5.33325 12.3446 5.33325 11.9668V6.63346C5.33325 6.25569 5.46103 5.93902 5.71659 5.68346C5.97214 5.42791 6.28881 5.30013 6.66659 5.30013H8.66658V3.9668H11.3333V5.30013H14.6666V7.9668H7.99992V10.6335H13.3333C13.711 10.6335 14.0277 10.7612 14.2833 11.0168C14.5388 11.2724 14.6666 11.589 14.6666 11.9668V17.3001C14.6666 17.6779 14.5388 17.9946 14.2833 18.2501C14.0277 18.5057 13.711 18.6335 13.3333 18.6335H11.3333V19.9668H8.66658ZM18.5999 27.9668L12.9333 22.3001L14.7999 20.4335L18.5999 24.2335L26.1333 16.7001L27.9999 18.5668L18.5999 27.9668Z"
+                      fill="#F7A70A"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <p class="font-bold mt-4">Best prices and discounts</p>
+              <p class="mt-2 text-[15px]">Access top deals from leading car rental companies, enjoy discounts, and unlock exclusive offers.</p>
+            </div>
+            <div class="bg-[#222123] p-4 rounded-[6px] w-[24%] text-white">
+              <div class="bg-white w-[50px] h-[50px] overflow-hidden rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <mask id="mask0_2258_14768" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32"><rect width="32" height="32" fill="#D9D9D9"></rect></mask>
+                  <g mask="url(#mask0_2258_14768)">
+                    <path
+                      d="M14.8001 25.3327H17.1334V23.666C18.2445 23.466 19.2001 23.0327 20.0001 22.366C20.8001 21.6993 21.2001 20.7105 21.2001 19.3993C21.2001 18.466 20.9334 17.6105 20.4001 16.8327C19.8667 16.0549 18.8001 15.3771 17.2001 14.7993C15.8667 14.3549 14.9445 13.966 14.4334 13.6327C13.9223 13.2993 13.6667 12.8438 13.6667 12.266C13.6667 11.6882 13.8723 11.2327 14.2834 10.8993C14.6945 10.566 15.289 10.3993 16.0667 10.3993C16.7779 10.3993 17.3334 10.5716 17.7334 10.916C18.1334 11.2605 18.4223 11.6882 18.6001 12.1993L20.7334 11.3327C20.489 10.5549 20.039 9.87713 19.3834 9.29935C18.7279 8.72157 18.0001 8.39935 17.2001 8.33268V6.66602H14.8667V8.33268C13.7556 8.57713 12.889 9.06602 12.2667 9.79935C11.6445 10.5327 11.3334 11.3549 11.3334 12.266C11.3334 13.3105 11.639 14.1549 12.2501 14.7993C12.8612 15.4438 13.8223 15.9993 15.1334 16.466C16.5334 16.9771 17.5056 17.4327 18.0501 17.8327C18.5945 18.2327 18.8667 18.7549 18.8667 19.3993C18.8667 20.1327 18.6056 20.6716 18.0834 21.016C17.5612 21.3605 16.9334 21.5327 16.2001 21.5327C15.4667 21.5327 14.8167 21.3049 14.2501 20.8493C13.6834 20.3938 13.2667 19.7105 13.0001 18.7993L10.8001 19.666C11.1112 20.7327 11.5945 21.5938 12.2501 22.2493C12.9056 22.9049 13.7556 23.3549 14.8001 23.5993V25.3327ZM16.0001 29.3327C14.1556 29.3327 12.4223 28.9827 10.8001 28.2827C9.17786 27.5827 7.76675 26.6327 6.56675 25.4327C5.36675 24.2327 4.41675 22.8216 3.71675 21.1993C3.01675 19.5771 2.66675 17.8438 2.66675 15.9993C2.66675 14.1549 3.01675 12.4216 3.71675 10.7993C4.41675 9.17713 5.36675 7.76602 6.56675 6.56602C7.76675 5.36602 9.17786 4.41602 10.8001 3.71602C12.4223 3.01602 14.1556 2.66602 16.0001 2.66602C17.8445 2.66602 19.5779 3.01602 21.2001 3.71602C22.8223 4.41602 24.2334 5.36602 25.4334 6.56602C26.6334 7.76602 27.5834 9.17713 28.2834 10.7993C28.9834 12.4216 29.3334 14.1549 29.3334 15.9993C29.3334 17.8438 28.9834 19.5771 28.2834 21.1993C27.5834 22.8216 26.6334 24.2327 25.4334 25.4327C24.2334 26.6327 22.8223 27.5827 21.2001 28.2827C19.5779 28.9827 17.8445 29.3327 16.0001 29.3327ZM16.0001 26.666C18.9779 26.666 21.5001 25.6327 23.5667 23.566C25.6334 21.4993 26.6667 18.9771 26.6667 15.9993C26.6667 13.0216 25.6334 10.4993 23.5667 8.43268C21.5001 6.36602 18.9779 5.33268 16.0001 5.33268C13.0223 5.33268 10.5001 6.36602 8.43341 8.43268C6.36675 10.4993 5.33341 13.0216 5.33341 15.9993C5.33341 18.9771 6.36675 21.4993 8.43341 23.566C10.5001 25.6327 13.0223 26.666 16.0001 26.666Z"
+                      fill="#F7A70A"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <p class="font-bold mt-4">Bookings with cashback</p>
+              <p class="mt-2 text-[15px]">Make your reservation and earn up to 10% of cashback in your digital wallet for your next booking.</p>
+            </div>
+            <div class="bg-[#222123] p-4 rounded-[6px] w-[24%] text-white">
+              <div class="bg-white w-[50px] h-[50px] overflow-hidden rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <mask id="mask0_1749_34304" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32"><rect width="32" height="32" fill="#D9D9D9"></rect></mask>
+                  <g mask="url(#mask0_1749_34304)">
+                    <path
+                      d="M10.6667 23.9993H12.6667V17.3327H16.0001L17.3334 19.9993H24.0001V11.9993H20.0001L18.6667 9.33268H10.6667V23.9993ZM18.5667 17.9993L17.2334 15.3327H12.6667V11.3327H17.4334L18.7667 13.9993H22.0001V17.9993H18.5667ZM16.0001 29.3327C14.1556 29.3327 12.4223 28.9827 10.8001 28.2827C9.17786 27.5827 7.76675 26.6327 6.56675 25.4327C5.36675 24.2327 4.41675 22.8216 3.71675 21.1993C3.01675 19.5771 2.66675 17.8438 2.66675 15.9993C2.66675 14.1549 3.01675 12.4216 3.71675 10.7993C4.41675 9.17713 5.36675 7.76602 6.56675 6.56602C7.76675 5.36602 9.17786 4.41602 10.8001 3.71602C12.4223 3.01602 14.1556 2.66602 16.0001 2.66602C17.8445 2.66602 19.5779 3.01602 21.2001 3.71602C22.8223 4.41602 24.2334 5.36602 25.4334 6.56602C26.6334 7.76602 27.5834 9.17713 28.2834 10.7993C28.9834 12.4216 29.3334 14.1549 29.3334 15.9993C29.3334 17.8438 28.9834 19.5771 28.2834 21.1993C27.5834 22.8216 26.6334 24.2327 25.4334 25.4327C24.2334 26.6327 22.8223 27.5827 21.2001 28.2827C19.5779 28.9827 17.8445 29.3327 16.0001 29.3327ZM16.0001 26.666C18.9779 26.666 21.5001 25.6327 23.5667 23.566C25.6334 21.4993 26.6667 18.9771 26.6667 15.9993C26.6667 13.0216 25.6334 10.4993 23.5667 8.43268C21.5001 6.36602 18.9779 5.33268 16.0001 5.33268C13.0223 5.33268 10.5001 6.36602 8.43341 8.43268C6.36675 10.4993 5.33341 13.0216 5.33341 15.9993C5.33341 18.9771 6.36675 21.4993 8.43341 23.566C10.5001 25.6327 13.0223 26.666 16.0001 26.666Z"
+                      fill="#F7A70A"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <p class="font-bold mt-4">We are global</p>
+              <p class="mt-2 text-[15px]">Compare the best options from 350+ car rental companies in 7,000+ cities and 40,000+ service points</p>
+            </div>
+            <div class="bg-[#222123] p-4 rounded-[6px] w-[24%] text-white">
+              <div class="bg-white w-[50px] h-[50px] overflow-hidden rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 36 36" fill="none">
+                  <mask id="mask0_1735_18478" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+                    <rect x="0.5" y="0.5" width="35" height="35" fill="#D9D9D9"></rect>
+                  </mask>
+                  <g mask="url(#mask0_1735_18478)">
+                    <path
+                      d="M18 32.5834L17.6354 28.2084H17.2708C13.8194 28.2084 10.8906 27.0052 8.48438 24.599C6.07813 22.1927 4.875 19.2639 4.875 15.8125C4.875 12.3611 6.07813 9.43231 8.48438 7.02606C10.8906 4.61981 13.8194 3.41669 17.2708 3.41669C18.9965 3.41669 20.6068 3.73874 22.1016 4.38283C23.5964 5.02693 24.9089 5.91408 26.0391 7.04429C27.1693 8.1745 28.0564 9.487 28.7005 10.9818C29.3446 12.4766 29.6667 14.0868 29.6667 15.8125C29.6667 17.6354 29.3689 19.3854 28.7734 21.0625C28.178 22.7396 27.3637 24.2952 26.3307 25.7292C25.2977 27.1632 24.0703 28.4636 22.6484 29.6302C21.2266 30.7969 19.6771 31.7813 18 32.5834ZM20.9167 27.2604C22.6424 25.8021 24.046 24.0946 25.1276 22.138C26.2092 20.1814 26.75 18.0729 26.75 15.8125C26.75 13.1632 25.8325 10.921 23.9974 9.08596C22.1623 7.25089 19.9201 6.33335 17.2708 6.33335C14.6215 6.33335 12.3793 7.25089 10.5443 9.08596C8.7092 10.921 7.79167 13.1632 7.79167 15.8125C7.79167 18.4618 8.7092 20.704 10.5443 22.5391C12.3793 24.3742 14.6215 25.2917 17.2708 25.2917H20.9167V27.2604ZM17.2344 23.7969C17.6476 23.7969 18 23.6511 18.2917 23.3594C18.5833 23.0677 18.7292 22.7153 18.7292 22.3021C18.7292 21.8889 18.5833 21.5365 18.2917 21.2448C18 20.9531 17.6476 20.8073 17.2344 20.8073C16.8212 20.8073 16.4687 20.9531 16.1771 21.2448C15.8854 21.5365 15.7396 21.8889 15.7396 22.3021C15.7396 22.7153 15.8854 23.0677 16.1771 23.3594C16.4687 23.6511 16.8212 23.7969 17.2344 23.7969ZM16.1771 19.1667H18.3646C18.3646 18.4375 18.4375 17.9271 18.5833 17.6354C18.7292 17.3438 19.191 16.809 19.9688 16.0313C20.4062 15.5938 20.7708 15.1198 21.0625 14.6094C21.3542 14.099 21.5 13.5521 21.5 12.9688C21.5 11.7292 21.0807 10.7995 20.2422 10.1797C19.4036 9.55992 18.4132 9.25002 17.2708 9.25002C16.2014 9.25002 15.3021 9.54776 14.5729 10.1432C13.8438 10.7387 13.3333 11.4618 13.0417 12.3125L15.0833 13.1146C15.2049 12.7014 15.4358 12.2943 15.776 11.8932C16.1163 11.4922 16.6146 11.2917 17.2708 11.2917C17.9271 11.2917 18.4193 11.474 18.7474 11.8386C19.0755 12.2031 19.2396 12.6042 19.2396 13.0417C19.2396 13.4549 19.1181 13.8255 18.875 14.1537C18.6319 14.4818 18.3403 14.816 18 15.1563C17.1493 15.8854 16.6328 16.4627 16.4505 16.888C16.2682 17.3134 16.1771 18.0729 16.1771 19.1667Z"
+                      fill="#F7A70A"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <p class="font-bold mt-4">Excellence in customer service</p>
+              <p class="mt-2 text-[15px]">Access support from our specialized team, available 7 days a week.</p>
+            </div>
+          </div>
+          <div class="h-[400px] w-[500px] mx-auto adv_fixed"></div>
+        </div>
+      </section>
+
+      <!-- categories -->
+      <section>
+        <div class="container">
+          <h2 class="text-5xl font-bold mt-24 text-white">Категории автомобилей</h2>
+          <div class="flex category_wrapper items-center justify-between flex-wrap mt-12 gap-y-2">
+            <a href="" class="h-[170px] text-[20px] group relative flex items-center justify-between w-[32%] p-8 font-bold bg-[#222123] text-white">
+              <span>Кроссоверы</span>
+              <img src="/photos/over.webp" alt="over photo" width="130" class="relative z-[1]" />
+              <div
+                class="absolute duration-500 group-hover:scale-105 scale-0 top-1/2 right-[20px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 border border-solid border-white rounded-full"
+              ></div>
+              <div
+                class="absolute duration-200 group-hover:scale-110 scale-0 top-1/2 right-[0px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] border border-solid border-[#949494] rounded-full"
+              ></div>
+            </a>
+            <a href="" class="h-[170px] group relative text-[20px] flex items-center justify-between w-[32%] p-8 font-bold bg-[#222123] text-white">
+              <span>Седаны</span>
+              <img src="/photos/sedan.webp" alt="sedan photo" width="150" class="relative z-[1]" />
+              <div
+                class="absolute duration-500 group-hover:scale-105 scale-0 top-1/2 right-[40px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 border border-solid border-white rounded-full"
+              ></div>
+              <div
+                class="absolute duration-200 group-hover:scale-110 scale-0 top-1/2 right-[20px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] border border-solid border-[#949494] rounded-full"
+              ></div>
+            </a>
+            <a href="" class="h-[170px] group relative text-[20px] flex items-center justify-between w-[32%] p-8 font-bold bg-[#222123] text-white">
+              <span>Купе</span>
+              <img src="/photos/cupe.webp" alt="cupe photo" width="150" class="relative z-[1]" />
+              <div
+                class="absolute duration-500 group-hover:scale-105 scale-0 top-1/2 right-[40px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 border border-solid border-white rounded-full"
+              ></div>
+              <div
+                class="absolute duration-200 group-hover:scale-110 scale-0 top-1/2 right-[20px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] border border-solid border-[#949494] rounded-full"
+              ></div>
+            </a>
+            <a href="" class="h-[170px] group relative text-[20px] flex items-center justify-between w-[32%] p-8 font-bold bg-[#222123] text-white">
+              <span>Кабриолеты</span>
+              <img src="/photos/cabriolet.webp" alt="cabriolet photo" width="150" class="relative z-[1]" />
+              <div
+                class="absolute duration-500 group-hover:scale-105 scale-0 top-1/2 right-[40px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 border border-solid border-white rounded-full"
+              ></div>
+              <div
+                class="absolute duration-200 group-hover:scale-110 scale-0 top-1/2 right-[20px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] border border-solid border-[#949494] rounded-full"
+              ></div>
+            </a>
+            <a href="" class="h-[170px] group relative text-[20px] flex items-center justify-between w-[32%] p-8 font-bold bg-[#222123] text-white">
+              <span>Премиум</span>
+              <img src="/photos/premium.webp" alt="premium photo" width="150" class="relative z-[1]" />
+              <div
+                class="absolute duration-500 group-hover:scale-105 scale-0 top-1/2 right-[40px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 border border-solid border-white rounded-full"
+              ></div>
+              <div
+                class="absolute duration-200 group-hover:scale-110 scale-0 top-1/2 right-[20px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] border border-solid border-[#949494] rounded-full"
+              ></div>
+            </a>
+            <a href="" class="h-[170px] group relative text-[20px] flex items-center justify-between w-[32%] p-8 font-bold bg-[#222123] text-white">
+              <span>Эконом</span>
+              <img src="/photos/econom.webp" alt="econom photo" width="150" class="relative z-[1]" />
+              <div
+                class="absolute duration-500 group-hover:scale-105 scale-0 top-1/2 right-[40px] -translate-x-1/2 -translate-y-1/2 w-15 h-15 border border-solid border-white rounded-full"
+              ></div>
+              <div
+                class="absolute duration-200 group-hover:scale-110 scale-0 top-1/2 right-[20px] -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] border border-solid border-[#949494] rounded-full"
+              ></div>
+            </a>
+            <a href="" class="h-[170px] uppercase group relative text-5xl flex items-center justify-center w-full p-8 font-bold bg-[#222123] text-white">
+              <span>Акция</span>
+              <img src="/photos/percent.webp" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section>
+        <div class="container mt-18">
+          <div class="flex flex-wrap items-center justify-between gap-y-12">
+            <div class="w-[31%] h-[170px] bg-[#1E1D1F] p-[20px] text-white text-[18px] font-bold leading-8 relative">
+              <span>50+ уникальных авто в аренду из нашего автопарка</span>
+              <div class="absolute right-5 bottom-5">
+                <img src="/photos/1.svg" alt="photo" />
+              </div>
+            </div>
+            <div class="w-[31%] h-[170px] bg-[#1E1D1F] p-[20px] text-white text-[18px] font-bold leading-8 relative">
+              <span>Доставка и прием автомобилей по Москве 24/7</span>
+              <div class="absolute right-5 bottom-5">
+                <img src="/photos/2.svg" alt="photo" />
+              </div>
+            </div>
+            <div class="w-[31%] h-[170px] bg-[#1E1D1F] p-[20px] text-white text-[18px] font-bold leading-8 relative">
+              <span>Страхование КАСКО и ОСАГО включено</span>
+              <div class="absolute right-5 bottom-5">
+                <img src="/photos/3.svg" alt="photo" />
+              </div>
+            </div>
+            <div class="w-[31%] h-[170px] bg-[#1E1D1F] p-[20px] text-white text-[18px] font-bold leading-8 relative">
+              <span>Полная конфиденциальнось. Не ведется видео и аудиозапись в автомобиле</span>
+              <div class="absolute right-5 bottom-5">
+                <img src="/photos/4.svg" alt="photo" />
+              </div>
+            </div>
+            <div class="w-[31%] h-[170px] bg-[#1E1D1F] p-[20px] text-white text-[18px] font-bold leading-8 relative">
+              <span>Круглосуточная техническая поддержка</span>
+              <div class="absolute right-5 bottom-5">
+                <img src="/photos/5.svg" alt="photo" />
+              </div>
+            </div>
+            <div class="w-[31%] h-[170px] bg-[#1E1D1F] p-[20px] text-white text-[18px] font-bold leading-8 relative">
+              <span>Все модели имеют премиальную комплектацию</span>
+              <div class="absolute right-5 bottom-5">
+                <img src="/photos/6.svg" alt="photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- blogs -->
+      <section>
+        <div class="container">
+          <h2 class="text-5xl font-bold mt-24 text-white">Блоги</h2>
+          <div class="swiper blogSwiper mt-12">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="" class="bg-white inline-block rounded-[64px] group duration-300 ease-in-out hover:bg-[#1E1D1F] hover:text-white">
+                  <div class="w-full h-[350px] rounded-[64px] overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-[1.1] duration-300 ease-in-out" src="/photos/audi.webp" alt="" />
+                  </div>
+                  <div class="p-8">
+                    <div class="flex items-center gap-3 opacity-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24"
+                        height="24"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                        class="group-hover:invert"
+                      >
+                        <g>
+                          <path
+                            fill-rule="evenodd"
+                            d="m178.698 381.339 47.555 61.805c4.317 5.61 3.56 13.552-1.683 18.308l-16.354 14.842c-2.921 2.65-6.436 3.829-10.364 3.474-3.927-.355-7.162-2.154-9.573-5.275l-52.723-68.247zm260.869-158.618H488c7.747 0 14.016-6.327 14-14.064-.016-7.747-6.333-14.007-14.07-14.007h-48.433c-7.747 0-14.016 6.327-14 14.063.015 7.749 6.332 14.008 14.07 14.008zM382.078 95.199l24.217-41.944c3.869-6.701 1.607-15.301-5.095-19.189-6.692-3.882-15.306-1.617-19.179 5.092l-24.217 41.944c-3.869 6.701-1.607 15.301 5.095 19.189 6.692 3.882 15.305 1.617 19.179-5.092zm56.036 50.242 39.763-22.957c6.75-3.897 9.062-12.526 5.165-19.277-3.897-6.75-12.526-9.062-19.277-5.165L424.003 121c-6.75 3.897-9.062 12.526-5.165 19.277 3.897 6.749 12.526 9.061 19.276 5.164zm-62.538 63.168 46.9 81.234c8.806 15.251 3.531 34.934-11.72 43.74-14.232 8.217-32.322 4.172-41.832-8.799h-.002c-51.914-7.897-119.538.586-186.781 26.799l-64.646-111.969c56.344-45.079 97.63-99.115 116.749-148.022l.001-.002c-6.716-14.788-1.199-32.688 13.144-40.969 15.252-8.806 34.934-3.531 43.74 11.72l46.9 81.234a38.09 38.09 0 0 1 4.256-2.854c18.122-10.463 41.296-4.254 51.759 13.869s4.254 41.297-13.869 51.76a38.057 38.057 0 0 1-4.599 2.259zm-209.69 154.819L98.147 246.102l-53.851 31.091C11.574 296.085.26 338.314 19.151 371.035l.001.001c18.892 32.721 61.12 44.036 93.842 25.145l53.851-31.091z"
+                            clip-rule="evenodd"
+                            fill="#000000"
+                            opacity="1"
+                            data-original="#000000"
+                            class=""
+                          ></path>
+                        </g>
+                      </svg>
+                      <p class="text-[15px]">21.01.2000</p>
+                    </div>
+                    <p class="text-[22px] font-bold mt-3">Lorem, ipsum dolor</p>
+                    <p class="line-clamp-3 mt-4 text-[14px]">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus est veniam, soluta minima, animi quo harum quidem voluptatibus similique
+                      reiciendis omnis, tempore odit?
+                    </p>
+                    <span class="mt-3 px-4 py-2 bg-[#2C2B2E] inline-block text-white rounded-[16px] text-[14px] group-hover:bg-white group-hover:text-[#000]">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="bg-white inline-block rounded-[64px] group duration-300 ease-in-out hover:bg-[#1E1D1F] hover:text-white">
+                  <div class="w-full h-[350px] rounded-[64px] overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-[1.1] duration-300 ease-in-out" src="/photos/ferrari.webp" alt="" />
+                  </div>
+                  <div class="p-8">
+                    <div class="flex items-center gap-3 opacity-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24"
+                        height="24"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                        class="group-hover:invert"
+                      >
+                        <g>
+                          <path
+                            fill-rule="evenodd"
+                            d="m178.698 381.339 47.555 61.805c4.317 5.61 3.56 13.552-1.683 18.308l-16.354 14.842c-2.921 2.65-6.436 3.829-10.364 3.474-3.927-.355-7.162-2.154-9.573-5.275l-52.723-68.247zm260.869-158.618H488c7.747 0 14.016-6.327 14-14.064-.016-7.747-6.333-14.007-14.07-14.007h-48.433c-7.747 0-14.016 6.327-14 14.063.015 7.749 6.332 14.008 14.07 14.008zM382.078 95.199l24.217-41.944c3.869-6.701 1.607-15.301-5.095-19.189-6.692-3.882-15.306-1.617-19.179 5.092l-24.217 41.944c-3.869 6.701-1.607 15.301 5.095 19.189 6.692 3.882 15.305 1.617 19.179-5.092zm56.036 50.242 39.763-22.957c6.75-3.897 9.062-12.526 5.165-19.277-3.897-6.75-12.526-9.062-19.277-5.165L424.003 121c-6.75 3.897-9.062 12.526-5.165 19.277 3.897 6.749 12.526 9.061 19.276 5.164zm-62.538 63.168 46.9 81.234c8.806 15.251 3.531 34.934-11.72 43.74-14.232 8.217-32.322 4.172-41.832-8.799h-.002c-51.914-7.897-119.538.586-186.781 26.799l-64.646-111.969c56.344-45.079 97.63-99.115 116.749-148.022l.001-.002c-6.716-14.788-1.199-32.688 13.144-40.969 15.252-8.806 34.934-3.531 43.74 11.72l46.9 81.234a38.09 38.09 0 0 1 4.256-2.854c18.122-10.463 41.296-4.254 51.759 13.869s4.254 41.297-13.869 51.76a38.057 38.057 0 0 1-4.599 2.259zm-209.69 154.819L98.147 246.102l-53.851 31.091C11.574 296.085.26 338.314 19.151 371.035l.001.001c18.892 32.721 61.12 44.036 93.842 25.145l53.851-31.091z"
+                            clip-rule="evenodd"
+                            fill="#000000"
+                            opacity="1"
+                            data-original="#000000"
+                            class=""
+                          ></path>
+                        </g>
+                      </svg>
+                      <p class="text-[15px]">21.01.2000</p>
+                    </div>
+                    <p class="text-[22px] font-bold mt-3">Lorem, ipsum dolor</p>
+                    <p class="line-clamp-3 mt-4 text-[14px]">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus est veniam, soluta minima, animi quo harum quidem voluptatibus similique
+                      reiciendis omnis, tempore odit?
+                    </p>
+                    <span class="mt-3 px-4 py-2 bg-[#2C2B2E] inline-block text-white rounded-[16px] text-[14px] group-hover:bg-white group-hover:text-[#000]">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="bg-white inline-block rounded-[64px] group duration-300 ease-in-out hover:bg-[#1E1D1F] hover:text-white">
+                  <div class="w-full h-[350px] rounded-[64px] overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-[1.1] duration-300 ease-in-out" src="/photos/audi.webp" alt="" />
+                  </div>
+                  <div class="p-8">
+                    <div class="flex items-center gap-3 opacity-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24"
+                        height="24"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                        class="group-hover:invert"
+                      >
+                        <g>
+                          <path
+                            fill-rule="evenodd"
+                            d="m178.698 381.339 47.555 61.805c4.317 5.61 3.56 13.552-1.683 18.308l-16.354 14.842c-2.921 2.65-6.436 3.829-10.364 3.474-3.927-.355-7.162-2.154-9.573-5.275l-52.723-68.247zm260.869-158.618H488c7.747 0 14.016-6.327 14-14.064-.016-7.747-6.333-14.007-14.07-14.007h-48.433c-7.747 0-14.016 6.327-14 14.063.015 7.749 6.332 14.008 14.07 14.008zM382.078 95.199l24.217-41.944c3.869-6.701 1.607-15.301-5.095-19.189-6.692-3.882-15.306-1.617-19.179 5.092l-24.217 41.944c-3.869 6.701-1.607 15.301 5.095 19.189 6.692 3.882 15.305 1.617 19.179-5.092zm56.036 50.242 39.763-22.957c6.75-3.897 9.062-12.526 5.165-19.277-3.897-6.75-12.526-9.062-19.277-5.165L424.003 121c-6.75 3.897-9.062 12.526-5.165 19.277 3.897 6.749 12.526 9.061 19.276 5.164zm-62.538 63.168 46.9 81.234c8.806 15.251 3.531 34.934-11.72 43.74-14.232 8.217-32.322 4.172-41.832-8.799h-.002c-51.914-7.897-119.538.586-186.781 26.799l-64.646-111.969c56.344-45.079 97.63-99.115 116.749-148.022l.001-.002c-6.716-14.788-1.199-32.688 13.144-40.969 15.252-8.806 34.934-3.531 43.74 11.72l46.9 81.234a38.09 38.09 0 0 1 4.256-2.854c18.122-10.463 41.296-4.254 51.759 13.869s4.254 41.297-13.869 51.76a38.057 38.057 0 0 1-4.599 2.259zm-209.69 154.819L98.147 246.102l-53.851 31.091C11.574 296.085.26 338.314 19.151 371.035l.001.001c18.892 32.721 61.12 44.036 93.842 25.145l53.851-31.091z"
+                            clip-rule="evenodd"
+                            fill="#000000"
+                            opacity="1"
+                            data-original="#000000"
+                            class=""
+                          ></path>
+                        </g>
+                      </svg>
+                      <p class="text-[15px]">21.01.2000</p>
+                    </div>
+                    <p class="text-[22px] font-bold mt-3">Lorem, ipsum dolor</p>
+                    <p class="line-clamp-3 mt-4 text-[14px]">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus est veniam, soluta minima, animi quo harum quidem voluptatibus similique
+                      reiciendis omnis, tempore odit?
+                    </p>
+                    <span class="mt-3 px-4 py-2 bg-[#2C2B2E] inline-block text-white rounded-[16px] text-[14px] group-hover:bg-white group-hover:text-[#000]">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="bg-white inline-block rounded-[64px] group duration-300 ease-in-out hover:bg-[#1E1D1F] hover:text-white">
+                  <div class="w-full h-[350px] rounded-[64px] overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-[1.1] duration-300 ease-in-out" src="/photos/ferrari.webp" alt="" />
+                  </div>
+                  <div class="p-8">
+                    <div class="flex items-center gap-3 opacity-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24"
+                        height="24"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                        class="group-hover:invert"
+                      >
+                        <g>
+                          <path
+                            fill-rule="evenodd"
+                            d="m178.698 381.339 47.555 61.805c4.317 5.61 3.56 13.552-1.683 18.308l-16.354 14.842c-2.921 2.65-6.436 3.829-10.364 3.474-3.927-.355-7.162-2.154-9.573-5.275l-52.723-68.247zm260.869-158.618H488c7.747 0 14.016-6.327 14-14.064-.016-7.747-6.333-14.007-14.07-14.007h-48.433c-7.747 0-14.016 6.327-14 14.063.015 7.749 6.332 14.008 14.07 14.008zM382.078 95.199l24.217-41.944c3.869-6.701 1.607-15.301-5.095-19.189-6.692-3.882-15.306-1.617-19.179 5.092l-24.217 41.944c-3.869 6.701-1.607 15.301 5.095 19.189 6.692 3.882 15.305 1.617 19.179-5.092zm56.036 50.242 39.763-22.957c6.75-3.897 9.062-12.526 5.165-19.277-3.897-6.75-12.526-9.062-19.277-5.165L424.003 121c-6.75 3.897-9.062 12.526-5.165 19.277 3.897 6.749 12.526 9.061 19.276 5.164zm-62.538 63.168 46.9 81.234c8.806 15.251 3.531 34.934-11.72 43.74-14.232 8.217-32.322 4.172-41.832-8.799h-.002c-51.914-7.897-119.538.586-186.781 26.799l-64.646-111.969c56.344-45.079 97.63-99.115 116.749-148.022l.001-.002c-6.716-14.788-1.199-32.688 13.144-40.969 15.252-8.806 34.934-3.531 43.74 11.72l46.9 81.234a38.09 38.09 0 0 1 4.256-2.854c18.122-10.463 41.296-4.254 51.759 13.869s4.254 41.297-13.869 51.76a38.057 38.057 0 0 1-4.599 2.259zm-209.69 154.819L98.147 246.102l-53.851 31.091C11.574 296.085.26 338.314 19.151 371.035l.001.001c18.892 32.721 61.12 44.036 93.842 25.145l53.851-31.091z"
+                            clip-rule="evenodd"
+                            fill="#000000"
+                            opacity="1"
+                            data-original="#000000"
+                            class=""
+                          ></path>
+                        </g>
+                      </svg>
+                      <p class="text-[15px]">21.01.2000</p>
+                    </div>
+                    <p class="text-[22px] font-bold mt-3">Lorem, ipsum dolor</p>
+                    <p class="line-clamp-3 mt-4 text-[14px]">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus est veniam, soluta minima, animi quo harum quidem voluptatibus similique
+                      reiciendis omnis, tempore odit?
+                    </p>
+                    <span class="mt-3 px-4 py-2 bg-[#2C2B2E] inline-block text-white rounded-[16px] text-[14px] group-hover:bg-white group-hover:text-[#000]">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="bg-white inline-block rounded-[64px] group duration-300 ease-in-out hover:bg-[#1E1D1F] hover:text-white">
+                  <div class="w-full h-[350px] rounded-[64px] overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-[1.1] duration-300 ease-in-out" src="/photos/audi.webp" alt="" />
+                  </div>
+                  <div class="p-8">
+                    <div class="flex items-center gap-3 opacity-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24"
+                        height="24"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                        class="group-hover:invert"
+                      >
+                        <g>
+                          <path
+                            fill-rule="evenodd"
+                            d="m178.698 381.339 47.555 61.805c4.317 5.61 3.56 13.552-1.683 18.308l-16.354 14.842c-2.921 2.65-6.436 3.829-10.364 3.474-3.927-.355-7.162-2.154-9.573-5.275l-52.723-68.247zm260.869-158.618H488c7.747 0 14.016-6.327 14-14.064-.016-7.747-6.333-14.007-14.07-14.007h-48.433c-7.747 0-14.016 6.327-14 14.063.015 7.749 6.332 14.008 14.07 14.008zM382.078 95.199l24.217-41.944c3.869-6.701 1.607-15.301-5.095-19.189-6.692-3.882-15.306-1.617-19.179 5.092l-24.217 41.944c-3.869 6.701-1.607 15.301 5.095 19.189 6.692 3.882 15.305 1.617 19.179-5.092zm56.036 50.242 39.763-22.957c6.75-3.897 9.062-12.526 5.165-19.277-3.897-6.75-12.526-9.062-19.277-5.165L424.003 121c-6.75 3.897-9.062 12.526-5.165 19.277 3.897 6.749 12.526 9.061 19.276 5.164zm-62.538 63.168 46.9 81.234c8.806 15.251 3.531 34.934-11.72 43.74-14.232 8.217-32.322 4.172-41.832-8.799h-.002c-51.914-7.897-119.538.586-186.781 26.799l-64.646-111.969c56.344-45.079 97.63-99.115 116.749-148.022l.001-.002c-6.716-14.788-1.199-32.688 13.144-40.969 15.252-8.806 34.934-3.531 43.74 11.72l46.9 81.234a38.09 38.09 0 0 1 4.256-2.854c18.122-10.463 41.296-4.254 51.759 13.869s4.254 41.297-13.869 51.76a38.057 38.057 0 0 1-4.599 2.259zm-209.69 154.819L98.147 246.102l-53.851 31.091C11.574 296.085.26 338.314 19.151 371.035l.001.001c18.892 32.721 61.12 44.036 93.842 25.145l53.851-31.091z"
+                            clip-rule="evenodd"
+                            fill="#000000"
+                            opacity="1"
+                            data-original="#000000"
+                            class=""
+                          ></path>
+                        </g>
+                      </svg>
+                      <p class="text-[15px]">21.01.2000</p>
+                    </div>
+                    <p class="text-[22px] font-bold mt-3">Lorem, ipsum dolor</p>
+                    <p class="line-clamp-3 mt-4 text-[14px]">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus est veniam, soluta minima, animi quo harum quidem voluptatibus similique
+                      reiciendis omnis, tempore odit?
+                    </p>
+                    <span class="mt-3 px-4 py-2 bg-[#2C2B2E] inline-block text-white rounded-[16px] text-[14px] group-hover:bg-white group-hover:text-[#000]">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="bg-white inline-block rounded-[64px] group duration-300 ease-in-out hover:bg-[#1E1D1F] hover:text-white">
+                  <div class="w-full h-[350px] rounded-[64px] overflow-hidden">
+                    <img class="w-full h-full object-cover group-hover:scale-[1.1] duration-300 ease-in-out" src="/photos/ferrari.webp" alt="" />
+                  </div>
+                  <div class="p-8">
+                    <div class="flex items-center gap-3 opacity-50">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24"
+                        height="24"
+                        x="0"
+                        y="0"
+                        viewBox="0 0 512 512"
+                        style="enable-background: new 0 0 512 512"
+                        xml:space="preserve"
+                        class="group-hover:invert"
+                      >
+                        <g>
+                          <path
+                            fill-rule="evenodd"
+                            d="m178.698 381.339 47.555 61.805c4.317 5.61 3.56 13.552-1.683 18.308l-16.354 14.842c-2.921 2.65-6.436 3.829-10.364 3.474-3.927-.355-7.162-2.154-9.573-5.275l-52.723-68.247zm260.869-158.618H488c7.747 0 14.016-6.327 14-14.064-.016-7.747-6.333-14.007-14.07-14.007h-48.433c-7.747 0-14.016 6.327-14 14.063.015 7.749 6.332 14.008 14.07 14.008zM382.078 95.199l24.217-41.944c3.869-6.701 1.607-15.301-5.095-19.189-6.692-3.882-15.306-1.617-19.179 5.092l-24.217 41.944c-3.869 6.701-1.607 15.301 5.095 19.189 6.692 3.882 15.305 1.617 19.179-5.092zm56.036 50.242 39.763-22.957c6.75-3.897 9.062-12.526 5.165-19.277-3.897-6.75-12.526-9.062-19.277-5.165L424.003 121c-6.75 3.897-9.062 12.526-5.165 19.277 3.897 6.749 12.526 9.061 19.276 5.164zm-62.538 63.168 46.9 81.234c8.806 15.251 3.531 34.934-11.72 43.74-14.232 8.217-32.322 4.172-41.832-8.799h-.002c-51.914-7.897-119.538.586-186.781 26.799l-64.646-111.969c56.344-45.079 97.63-99.115 116.749-148.022l.001-.002c-6.716-14.788-1.199-32.688 13.144-40.969 15.252-8.806 34.934-3.531 43.74 11.72l46.9 81.234a38.09 38.09 0 0 1 4.256-2.854c18.122-10.463 41.296-4.254 51.759 13.869s4.254 41.297-13.869 51.76a38.057 38.057 0 0 1-4.599 2.259zm-209.69 154.819L98.147 246.102l-53.851 31.091C11.574 296.085.26 338.314 19.151 371.035l.001.001c18.892 32.721 61.12 44.036 93.842 25.145l53.851-31.091z"
+                            clip-rule="evenodd"
+                            fill="#000000"
+                            opacity="1"
+                            data-original="#000000"
+                            class=""
+                          ></path>
+                        </g>
+                      </svg>
+                      <p class="text-[15px]">21.01.2000</p>
+                    </div>
+                    <p class="text-[22px] font-bold mt-3">Lorem, ipsum dolor</p>
+                    <p class="line-clamp-3 mt-4 text-[14px]">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus est veniam, soluta minima, animi quo harum quidem voluptatibus similique
+                      reiciendis omnis, tempore odit?
+                    </p>
+                    <span class="mt-3 px-4 py-2 bg-[#2C2B2E] inline-block text-white rounded-[16px] text-[14px] group-hover:bg-white group-hover:text-[#000]">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- call to action -->
+      <section>
+        <div class="container relative">
+          <div class="absolute left-[30%] top-1/2 -translate-y-1/2">
+            <img src="/photos/call_bg.webp" alt="cta background photo" />
+          </div>
+          <div class="flex flex-wrap justify-between mt-24">
+            <div class="w-[60%] text-white">
+              <p class="text-[36px] flex items-center gap-4"><span class="inline-block w-[15px] bg-[#57BA00] px-1 py-5"></span>Акция!</p>
+              <h2 class="uppercase text-5xl font-bold leading-[56px] mt-4">арендуйте автомобиль со скидкой -20%</h2>
+              <hr class="opacity-10 my-5" />
+              <p class="opacity-70 text-[14px]">
+                У вас есть возможность сэкономить при аренде наших автомобилей. Мы предоставляем уникальную акцию для наших клиентов, чтобы сделать вашу поездку еще более доступной
+                и приятной.
+              </p>
+              <div class="mt-12">
+                <span class="text-[24px]">Что вы получите:</span>
+                <div class="flex flex-wrap gap-y-8 justify-between mt-8">
+                  <div class="w-[49%] flex items-center gap-5">
+                    <span class="block neon_dot !w-[15px] h-[10px] rounded-full bg-[#57ba00]"></span>
+                    <p class="text-[14px] leading-[24px] opacity-70">Скидка 20% на аренду любого легкового автомобиля из нашего парка</p>
+                  </div>
+                  <div class="w-[49%] flex items-center gap-5">
+                    <span class="block neon_dot !w-[10px] h-[10px] rounded-full bg-[#57ba00]"></span>
+                    <p class="text-[14px] leading-[24px] opacity-70">Гибкий срок аренды - от 3 дней и более</p>
+                  </div>
+                  <div class="w-[49%] flex items-center gap-5">
+                    <span class="block neon_dot !w-[10px] h-[10px] rounded-full bg-[#57ba00]"></span>
+                    <p class="text-[14px] leading-[24px] opacity-70">Безлимитный пробег, чтобы исследовать все, что вы хотите</p>
+                  </div>
+                  <div class="w-[49%] flex items-center gap-5">
+                    <span class="block neon_dot !w-[10px] h-[10px] rounded-full bg-[#57ba00]"></span>
+                    <p class="text-[14px] leading-[24px] opacity-70">Надежность и комфорт в каждой поездке</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-[38%] call_form_wrapper p-[60px] rounded-[80px] text-white">
+              <p class="text-[24px] font-medium">Оставьте заявку</p>
+              <p class="text-[14px] opacity-70 mt-2">И мы перезвоним вам в течении 10 мин.</p>
+              <form action="">
+                <div class="flex flex-col gap-4 mt-4">
+                  <input class="inline-block outline-none h-[60px] p-[30px] py-[8px] rounded-[100px] border border-[#fff5] w-full" type="text" placeholder="Имя" required />
+                  <input class="inline-block outline-none h-[60px] p-[30px] py-[8px] rounded-[100px] border border-[#fff5] w-full" type="text" placeholder="Телефон" required />
+                  <label for="call_check" class="text-[14px] flex item-center gap-2">
+                    <input id="call_check" name="call_check" type="checkbox" type="text" required />
+                    <span>Ознакомлен(а) с пользовательским соглашением</span>
+                  </label>
+                </div>
+                <button class="mt-4 cursor-pointer px-[40px] py-[18px] rounded-[100px] bg-[#57BA00] text-[14px] uppercase font-medium">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- references -->
+      <section>
+        <div class="container">
+          <h2 class="text-5xl font-bold mt-24 text-white">Партнеры</h2>
+          <div class="swiper partnorSwiper mt-12">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="bg-white rounded-[16px] h-[150px] overflow-hidden">
+                  <img class="w-full h-full object-contain" src="/photos/audi-logo.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-[16px] h-[150px] overflow-hidden">
+                  <img class="w-full h-full object-contain" src="/photos/bmw-logo.webp" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-[16px] h-[150px] overflow-hidden">
+                  <img class="w-full h-full object-contain" src="/photos/mercedes.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-[16px] h-[150px] overflow-hidden">
+                  <img class="w-full h-full object-contain" src="/photos/ferrari-logo.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-[16px] h-[150px] overflow-hidden">
+                  <img class="w-full h-full object-contain" src="/photos/lambo-logo.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-[16px] h-[150px] overflow-hidden">
+                  <img class="w-full h-full object-contain" src="/photos/chevro-logo.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="bg-white rounded-[16px] h-[150px] overflow-hidden">
+                  <img class="w-full h-full object-contain" src="/photos/byd-logo.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#1E1D1F] text-white">
+      <div class="container mt-24 pt-16 pb-4">
+        <div class="flex flex-wrap justify-between">
+          <ul class="text-[15px] text-[#c2c2c2]">
+            <li class="text-[24px] font-bold mb-4 text-white">Клиентам</li>
+            <div class="flex flex-col gap-3">
+              <li><a href="">О нас</a></li>
+              <li><a href="">Условия</a></li>
+              <li><a href="">Тарифы</a></li>
+              <li><a href="">Отзывы</a></li>
+              <li><a href="">Сдать авто</a></li>
+              <li><a href="">Статьи</a></li>
+              <li><a href="">Команда</a></li>
+              <li><a href="">Контакты</a></li>
+            </div>
+          </ul>
+          <ul class="text-[15px] text-[#c2c2c2]">
+            <li class="text-[24px] font-bold mb-4 text-white">Автопарк</li>
+            <div class="flex flex-col gap-3">
+              <li><a href="">Внедорожники</a></li>
+              <li><a href="">Кабриолеты</a></li>
+              <li><a href="">Спорткары</a></li>
+              <li><a href="">Премиум</a></li>
+              <li><a href="">Электрокары</a></li>
+              <li><a href="">Купе</a></li>
+              <li><a href="">Архив</a></li>
+            </div>
+          </ul>
+          <ul class="text-[15px] text-[#c2c2c2]">
+            <li class="text-[24px] font-bold mb-4 text-white">Для мероприятий</li>
+            <div class="flex flex-col gap-3">
+              <li><a href="">Свадьба</a></li>
+              <li><a href="">День рождения</a></li>
+              <li><a href="">Фотосессия</a></li>
+              <li><a href="">Видеосъемка</a></li>
+              <li><a href="">Сертификаты</a></li>
+            </div>
+          </ul>
+          <div>
+            <p class="text-[24px] font-bold mb-4">Контакты</p>
+            <div class="flex flex-col gap-3">
+              <a href="" class="flex items-center gap-3 font-medium text-xl">
+                <img src="/photos/tel.svg" alt="" />
+                <span>+7 (495) 532-55-76</span>
+              </a>
+              <a href="" class="flex items-center gap-3 font-medium">
+                <img src="/photos/marker.svg" alt="" />
+                <span>Москва, Усачева, 22</span>
+              </a>
+              <a href="" class="flex items-center gap-3 font-medium">
+                <img src="/photos/marker.svg" alt="" />
+                <span>Сочи, ул. Голубая, 1А, Гостиница Radisson Blu Resort</span>
+              </a>
+              <div class="mt-2 text-[17px] opacity-30">
+                <p>ИНН: 772480594550</p>
+                <p>Индивидуальный предприниматель:</p>
+                <p>ШЕВЛЯКОВА ЕКАТЕРИНА АНДРЕЕВНА</p>
+                <p>ОГРН: 318774600008662</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-[3px] bg-[#fff] opacity-10 mt-8"></div>
+        <div class="mt-4 flex flex-wrap justify-between opacity-30 font-[100]">
+          <a href="">ASTON MARTIN</a>
+          <a href="">AUDI</a>
+          <a href="">BENTLEY</a>
+          <a href="">BMW</a>
+          <a href="">CHEVROLET</a>
+          <a href="">FERRARI</a>
+          <a href="">JAGUAR</a>
+          <a href="">LAMBORGHINI</a>
+          <a href="">LAND ROVER</a>
+          <a href="">McLAREN</a>
+          <a href="">MERCEDES</a>
+          <a href="">MUSTANG</a>
+          <a href="">PORSCHE</a>
+          <a href="">ROLLS ROYCE</a>
+          <a href="">TESLA</a>
+        </div>
+      </div>
+    </footer>
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
